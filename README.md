@@ -22,6 +22,7 @@
 
 ### 发版说明
 这里我直接提供了安卓`APP`，不想深究的小伙伴可以直接下载安装，有问题欢迎提`isuse`
+这里是`apk`文件下载直通车：[下载apk文件](https://github.com/Syske/mzsh/releases/download/v1.0.0/mzsh-1.0.35.170107.apk)
 
 
 ### 赞助
