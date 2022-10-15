@@ -31,8 +31,8 @@
 
 #### 支付宝
 
-<img src="https://images.cnblogs.com/cnblogs_com/caoleiCoding/1259828/o_221015165627_1665852936485.jpg" width = "50%">
+<img src="https://syske-pic-bed.oss-cn-hangzhou.aliyuncs.com/imgs/1665852936485.jpg" width = "50%">
 
 #### 微信
 
-<img src="https://images.cnblogs.com/cnblogs_com/caoleiCoding/1259828/o_221015165315_mm_facetoface_collect_qrcode_1665852715345.png" width = "50%">
+<img src="https://syske-pic-bed.oss-cn-hangzhou.aliyuncs.com/imgs/mm_facetoface_collect_qrcode_1665852715345.png" width = "50%">
