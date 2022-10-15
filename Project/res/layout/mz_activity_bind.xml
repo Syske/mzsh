@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff59c8d3" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="@dimen/y96">
+        <ImageButton android:id="@id/ib_back" android:background="@drawable/btn_return_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="17.0dip" android:textColor="#ffffffff" android:id="@id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/binding" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titleBar">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/mz_white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.meizu.smart.wristband.meizuUI.widget.MovingView android:id="@id/LayoutFind" android:layout_width="201.0dip" android:layout_height="201.0dip" android:layout_marginTop="50.0dip" android:layout_marginBottom="50.0dip">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/mz_bind_circle_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="6.0dip">
+                    <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="16.0dip" android:textColor="#ff59c8d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/start_find_meizu_band" />
+                    <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="12.0dip" android:textColor="#ff8d8d8d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/please_close_to_band" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/LayoutBall" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/ball" android:layout_width="13.0dip" android:layout_height="13.0dip" android:src="@drawable/mz_bind_ball_bg" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </com.meizu.smart.wristband.meizuUI.widget.MovingView>
+            <LinearLayout android:orientation="vertical" android:id="@id/layoutDevice" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="13.0dip" />
+                <ListView android:id="@id/list_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/black_10" android:dividerHeight="1.0px" android:overScrollMode="never" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LayoutBind" android:background="@color/mz_white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titleBar">
+        <LinearLayout android:gravity="center" android:background="@drawable/mz_bind_touch_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="51.0dip">
+            <ImageView android:background="@drawable/mz_bind_touch" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="16.0dip" android:textColor="#ff59c8d3" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="58.0dip" android:text="@string/mz_bind_bind_band" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/mz_black_aplha60" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/mz_bind_touch_band" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="12.0dip" android:textColor="#ff59c8d3" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/retry" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="70.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="70.0dip" android:text="@string/mz_bind_no_touch" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LayoutBindSuccess" android:background="@color/mz_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titleBar">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:background="@drawable/mz_bind_touch_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip">
+            <com.meizu.smart.wristband.meizuUI.main.widget.DrawHookView android:layout_gravity="center_horizontal" android:id="@id/iv_hook_icon" android:layout_width="130.0dip" android:layout_height="130.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="16.0dip" android:textColor="#ff59c8d3" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/mz_bind_success" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/mz_black_aplha60" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/mz_bind_welcome" />
+    </LinearLayout>
+</RelativeLayout>

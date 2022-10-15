@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x64" android:layout_marginRight="@dimen/x64"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/mz_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="15.0dip" android:textColor="@color/mz_black_aplha90" android:gravity="center" android:id="@id/level_title" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/mz_handup_level" />
+            <View android:background="#1a000000" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="16.0dip" android:layout_marginRight="20.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="58.0dip">
+                <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="16.0dip" android:textColor="@color/mz_black_aplha90" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x40" android:text="@string/mz_low" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/checkbox_low" android:layout_marginRight="@dimen/x40" style="@style/clock_checkbox_2" />
+            </RelativeLayout>
+            <View android:background="#1a000000" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="16.0dip" android:layout_marginRight="20.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="58.0dip">
+                <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="16.0dip" android:textColor="@color/mz_black_aplha90" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x40" android:text="@string/middle" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/checkbox_middle" android:layout_marginRight="@dimen/x40" android:checked="false" style="@style/clock_checkbox_2" />
+            </RelativeLayout>
+            <View android:background="#1a000000" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="16.0dip" android:layout_marginRight="20.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="58.0dip">
+                <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="16.0dip" android:textColor="@color/mz_black_aplha90" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x40" android:text="@string/mz_high" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/checkbox_high" android:layout_marginRight="@dimen/x40" style="@style/clock_checkbox_2" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="#1a000000" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="16.0dip" android:layout_marginRight="20.0dip" />
+    </LinearLayout>
+</RelativeLayout>

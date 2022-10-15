@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/mz_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dailog_exit_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="92.0dip">
+            <ImageView android:id="@id/img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_heart_measure" android:layout_centerHorizontal="true" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="18.0dip" android:textColor="#ff59cbd3" android:id="@id/tip1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dip" android:text="测量时请勿走动" android:layout_below="@id/img" android:layout_centerHorizontal="true" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/mz_black_aplha60" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="请保持手臂平稳\n并确保手环紧贴手臂，避开手腕位置" android:layout_below="@id/tip1" android:layout_centerInParent="true" android:lineSpacingExtra="12.0dip" />
+        </RelativeLayout>
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="18.0dip" android:textColor="#ff59cbd3" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/iknow" android:background="@drawable/mz_normal_text_selector" android:layout_width="240.0dip" android:layout_height="33.0dip" android:layout_marginTop="50.0dip" android:text="我知道了" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/mz_black_aplha60" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/nomore" android:padding="10.0dip" android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="不再提示" />
+    </LinearLayout>
+</RelativeLayout>

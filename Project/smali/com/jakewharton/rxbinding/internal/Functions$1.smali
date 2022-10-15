@@ -1,0 +1,14 @@
+.class synthetic Lcom/jakewharton/rxbinding/internal/Functions$1;
+.super Ljava/lang/Object;
+.source "Functions.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/jakewharton/rxbinding/internal/Functions;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1008
+    name = null
+.end annotation

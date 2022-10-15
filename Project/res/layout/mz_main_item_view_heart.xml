@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="18.0dip" android:textColor="#ffff726b" android:id="@id/heart_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="117" android:layout_centerVertical="true" app:isNumber="true" />
+    <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="12.0dip" android:textColor="#ffa3a3a3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginBottom="2.0dip" android:text="bpm" android:layout_toRightOf="@id/heart_rate" android:layout_centerVertical="true" />
+    <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="12.0dip" android:textColor="#ff666666" android:id="@id/heart_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:layout_marginBottom="2.0dip" android:text="8月30日 14：15" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

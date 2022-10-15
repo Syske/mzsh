@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/x54" android:paddingRight="@dimen/x54" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="55.0dip">
+        <RelativeLayout android:id="@id/rl1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/y18">
+            <ImageView android:id="@id/iv" android:background="@drawable/icon_sleep" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="11.0dip" android:textColor="#ff787878" android:id="@id/tv1" android:paddingLeft="23.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="22:30-07:00" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="#ffc4c4c4" android:id="@id/tv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="@dimen/y12" android:text="Sleep 7h30min, deep sleep 2h 30min" android:layout_below="@id/rl1" />
+    </RelativeLayout>
+    <View android:layout_gravity="bottom" android:background="@color/white_20" android:layout_width="fill_parent" android:layout_height="@dimen/y1" />
+</RelativeLayout>

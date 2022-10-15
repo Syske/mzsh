@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/rl_share_bitmap" android:background="#fffff0ef" android:paddingTop="@dimen/y100" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="5.0dip" android:layout_weight="1.0">
+            <ImageView android:background="@drawable/mz_share_heartrate_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="40.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="40.0dip" android:layout_marginBottom="25.0dip" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/userphoto" android:background="@drawable/mz_icon_share_photo" android:clickable="true" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_centerHorizontal="true" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="20.0dip" android:textColor="@color/mz_black_aplha60" android:id="@id/username" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:text="sgule" android:singleLine="true" android:layout_below="@id/userphoto" android:layout_centerHorizontal="true" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="15.0dip" android:textColor="@color/mz_black_aplha100" android:id="@id/heartrate_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="平均心率 10月20日" android:layout_below="@id/username" android:layout_centerHorizontal="true" />
+            <RelativeLayout android:gravity="center" android:id="@id/heart_info" android:background="@drawable/mz_btn_heart_normal" android:paddingBottom="40.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/heartrate_date" android:layout_centerHorizontal="true">
+                <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="52.0dip" android:textColor="@color/mz_white" android:id="@id/heartrate_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="70" app:isNumber="true" />
+                <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="18.0dip" android:textColor="@color/mz_white" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip" android:text="次/分" android:layout_toRightOf="@id/heartrate_data" android:layout_alignBottom="@id/heartrate_data" />
+            </RelativeLayout>
+            <com.github.mikephil.charting.charts.LineChart android:id="@id/HeartChart" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="55.0dip" android:layout_marginRight="55.0dip" android:layout_below="@id/heart_info" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/llAppInfo" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textColor="@color/mz_black_aplha60" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:drawableLeft="@drawable/share" android:drawablePadding="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rlShateTitle" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/y96">
+        <ImageButton android:id="@id/ib_back" android:background="@drawable/mz_btn_return_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/y22" android:layout_centerVertical="true" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="18.0dip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mz_share_title" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llShareButton" android:background="#fffff0ef" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_alignParentBottom="true">
+        <ImageButton android:id="@id/share_weixin" android:background="@drawable/mz_btn_heart_wechat_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <ImageButton android:id="@id/share_weixin_friends" android:background="@drawable/mz_btn_heart_friend_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <ImageButton android:id="@id/share_weibo" android:background="@drawable/mz_btn_heart_weibo_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <ImageButton android:id="@id/share_qq" android:background="@drawable/mz_btn_heart_qq_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <ImageButton android:id="@id/share_qqspace" android:background="@drawable/mz_btn_heart_space_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    </LinearLayout>
+</RelativeLayout>

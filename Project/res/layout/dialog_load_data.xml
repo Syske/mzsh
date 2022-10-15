@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x20" android:layout_marginRight="@dimen/x20"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="17.0dip" android:textColor="@color/color_font_normal" android:gravity="center" android:id="@id/tv_title" android:background="@color/transparent" android:layout_width="300.0dip" android:layout_height="36.0dip" />
+    <include layout="@layout/line_edge" />
+    <RadioGroup android:gravity="center_vertical" android:orientation="vertical" android:id="@id/radio_group_load" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginRight="13.0dip">
+        <RadioButton android:textSize="14.0dip" android:textColor="@color/color_font_normal" android:id="@id/radio_bt_all" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableLeft="@drawable/checkbox_music" />
+        <RadioButton android:textSize="14.0dip" android:textColor="@color/color_font_normal" android:id="@id/radio_bt_custom" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:checked="true" android:button="@null" android:singleLine="true" android:drawableLeft="@drawable/checkbox_music" />
+    </RadioGroup>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <Button android:textSize="14.0dip" android:textColor="@color/color_font_normal" android:gravity="center" android:id="@id/tv_start_time" android:text="2014 / 1  " style="@style/button_dfu_load" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffc3c3c3" android:layout_width="15.0dip" android:layout_height="1.0px" />
+        <Button android:textSize="14.0dip" android:textColor="@color/color_font_normal" android:gravity="center" android:id="@id/tv_end_time" android:text="2014 / 4 " style="@style/button_dfu_load" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="260.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <com.meizu.smart.wristband.meizuUI.font.BaseButton android:textSize="17.0dip" android:textColor="@android:color/white" android:id="@id/btn2" android:background="@drawable/dialog_cancle_selector" android:layout_marginRight="10.0dip" android:text="@string/RemaindSetCancel" style="@style/button_dfu_load" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseButton android:textSize="17.0dip" android:textColor="@android:color/white" android:id="@id/btn1" android:background="@drawable/dialog_sure_selector" style="@style/button_dfu_load" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/mz_act_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="23.0dip" android:layout_marginRight="23.0dip">
+        <com.meizu.smart.wristband.meizuUI.widget.DashedLine android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginBottom="1.0dip" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.meizu.smart.wristband.meizuUI.main.indicator.TitleIndicator android:id="@id/pagerindicator" android:background="@android:color/transparent" android:layout_width="210.0dip" android:layout_height="fill_parent" app:iindicator_textColor="@color/mz_tab_indicator_sport_text" app:textSizeNormal="15.0dip" app:textSizeSelected="15.0dip" app:footerLineHeight="4.0dip" app:footerColor="@color/mz_tab_indicator_sport_text_selected" app:footerTriangleHeight="3.0dip" />
+            <ImageButton android:id="@id/btnSetting" android:background="@drawable/mz_btn_nav_set_selector" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <com.meizu.smart.wristband.meizuUI.main.indicator.ViewPagerCompat android:id="@id/pager" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="never" />
+</LinearLayout>

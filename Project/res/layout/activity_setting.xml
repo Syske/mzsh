@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff59c8d3" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/y96">
+        <ImageView android:id="@id/btn_back" android:background="@drawable/btn_return_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="18.0dip" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/rl_user_info" android:background="@drawable/info_rl_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="90.0dip">
+            <RelativeLayout android:id="@id/rl_photo" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginLeft="@dimen/x24" android:layout_centerVertical="true">
+                <ImageView android:background="@drawable/photo_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/setting_photo" android:background="@drawable/mz_setting_user_defualt" android:layout_width="47.0dip" android:layout_height="47.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/x24" android:layout_marginTop="30.0dip" android:layout_marginBottom="20.0dip" android:layout_toLeftOf="@id/arrow" android:layout_toRightOf="@id/rl_photo" android:layout_centerVertical="true">
+                <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#e6000000" android:gravity="center_vertical" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Orange" android:singleLine="true" android:layout_weight="1.0" />
+                <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="13.0dip" android:textColor="#99000000" android:gravity="center_vertical" android:id="@id/tv_account" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="111111" android:layout_weight="1.0" />
+            </LinearLayout>
+            <ImageView android:id="@id/arrow" android:background="@drawable/mz_setting_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="29.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="#0a000000" android:layout_width="fill_parent" android:layout_height="13.0dip" />
+        <RelativeLayout android:id="@id/bind" android:background="@drawable/info_rl_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="63.0dip">
+            <ImageView android:id="@id/setting_photo_device" android:background="@drawable/mz_setting_band" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.0dip" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="15.0dip" android:textColor="#e6000000" android:id="@id/setting_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x24" android:text="@string/band_name" android:layout_toRightOf="@id/setting_photo_device" android:layout_centerVertical="true" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="10.0dip" android:textColor="#fff6a800" android:id="@id/setting_device_not_connected" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/y10" android:text="@string/not_connected" android:layout_below="@id/setting_device_name" android:layout_alignLeft="@id/setting_device_name" />
+            <ImageView android:background="@drawable/mz_setting_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="29.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="#0a000000" android:layout_width="fill_parent" android:layout_height="13.0dip" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="12.0dip" android:textColor="#ff787878" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x40" android:layout_marginTop="@dimen/y64" android:text="@string/setting" />
+        <View android:background="@color/white_20" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/y14" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/alarm" android:background="@drawable/info_rl_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="58.0dip">
+                <ImageView android:id="@id/alarm_icon" android:background="@drawable/mz_setting_alarm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.0dip" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+                <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="15.0dip" android:textColor="#e6000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x24" android:text="@string/setting_alarm" android:layout_toRightOf="@id/alarm_icon" android:layout_centerVertical="true" />
+                <ImageView android:background="@drawable/mz_setting_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="29.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#1a000000" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="60.0dip" android:layout_marginRight="25.0dip" />
+            <RelativeLayout android:id="@id/rl_preferences" android:background="@drawable/setting_item_select" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="15.0dip" android:textColor="#ffdedede" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x40" android:text="@string/setting_prefrences" android:layout_centerVertical="true" />
+                <ImageView android:background="@drawable/info_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/x40" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:id="@id/line_googlefit" android:background="@color/white_20" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/x40" android:layout_marginRight="@dimen/x40" />
+            <RelativeLayout android:id="@id/rl_googlefit" android:background="@drawable/setting_item_select" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="15.0dip" android:textColor="#ffdedede" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x40" android:text="Google Fit" android:layout_centerVertical="true" />
+                <ProgressBar android:id="@id/progress_bar_google_fit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/checkbox_googlefit" />
+                <CheckBox android:id="@id/checkbox_googlefit" android:layout_marginRight="@dimen/x40" style="@style/clock_checkbox_2" />
+            </RelativeLayout>
+            <View android:background="@color/white_20" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:background="@drawable/setting_item_select" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="15.0dip" android:textColor="#ffdedede" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x40" android:text="@string/time_system" android:layout_centerVertical="true" />
+                <ProgressBar android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/checkbox_inch_time" />
+                <CheckBox android:id="@id/checkbox_inch_time" android:layout_marginRight="@dimen/x40" style="@style/clock_checkbox_2" />
+            </RelativeLayout>
+            <View android:background="@color/white_20" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <View android:background="@color/white_20" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="44.0dip" />
+            <RelativeLayout android:id="@id/rl_share" android:background="@drawable/setting_item_select" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="15.0dip" android:textColor="#ffdedede" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x40" android:text="@string/setting_share" android:layout_centerVertical="true" />
+                <ImageView android:background="@drawable/info_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/x40" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#1a000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/x40" android:layout_marginRight="@dimen/x40" />
+            <RelativeLayout android:id="@id/rl_wechat" android:background="@drawable/info_rl_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="58.0dip">
+                <ImageView android:id="@id/wechat_icon" android:background="@drawable/wechat_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.0dip" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+                <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="15.0dip" android:textColor="#e6000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x24" android:text="@string/setting_wechat" android:layout_toRightOf="@id/wechat_icon" android:layout_centerVertical="true" />
+                <ImageView android:background="@drawable/mz_setting_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="29.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#1a000000" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/x40" android:layout_marginRight="@dimen/x40" />
+            <RelativeLayout android:id="@id/rl_help" android:background="@drawable/info_rl_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="58.0dip">
+                <ImageView android:id="@id/help_icon" android:background="@drawable/mz_setting_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.0dip" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+                <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="15.0dip" android:textColor="#e6000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x24" android:text="@string/setting_help" android:layout_toRightOf="@id/help_icon" android:layout_centerVertical="true" />
+                <ImageView android:background="@drawable/mz_setting_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="29.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#1a000000" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="60.0dip" android:layout_marginRight="25.0dip" />
+            <RelativeLayout android:id="@id/rl_about" android:background="@drawable/info_rl_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="58.0dip">
+                <ImageView android:id="@id/about_icon" android:background="@drawable/mz_setting_about" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.0dip" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+                <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="15.0dip" android:textColor="#e6000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x24" android:text="@string/setting_about" android:layout_toRightOf="@id/about_icon" android:layout_centerVertical="true" />
+                <ImageView android:background="@drawable/mz_setting_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="29.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#1a000000" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="60.0dip" android:layout_marginRight="25.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

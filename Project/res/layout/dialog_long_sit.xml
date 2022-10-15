@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/mz_share_heartrate_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="15.0dip" android:textColor="@color/mz_black_aplha90" android:gravity="center" android:id="@id/title_long_sit" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="Start Time" />
+    <View android:background="#ffdcdcdc" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/title_long_sit" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lineat_long_sit" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_below="@id/title_long_sit">
+        <com.meizu.smart.wristband.meizuUI.widget.CycleWheelView android:id="@id/time" android:layout_width="60.0dip" android:layout_height="105.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="20.0dip" android:overScrollMode="never" />
+        <TextView android:textSize="20.0dip" android:textColor="@color/mz_blue" android:id="@id/tvTip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=":" />
+        <com.meizu.smart.wristband.meizuUI.widget.CycleWheelView android:id="@id/sit_mins" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="105.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:overScrollMode="never" />
+    </LinearLayout>
+    <View android:id="@id/line1" android:background="#ffb6b6b6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/lineat_long_sit" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_below="@id/line1">
+        <RelativeLayout android:id="@id/dialog_cancle" android:background="@drawable/btn_exit_selector" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="15.0dip" android:textColor="@color/mz_black_aplha90" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/music_cancle" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:background="#ffb6b6b6" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/dialog_sure" android:background="@drawable/btn_exit_selector" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="15.0dip" android:textColor="#ff59cbd3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sure_str" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

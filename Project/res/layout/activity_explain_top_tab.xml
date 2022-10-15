@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/id_switch_tab_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/id_tab_chat_ll" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="16.0dip" android:textColor="#ff0000ff" android:gravity="center" android:id="@id/id_chat_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/id_tab_friend_ll" android:padding="10.0dip" android:clickable="true" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="16.0dip" android:textColor="#ff333333" android:gravity="center" android:id="@id/id_friend_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/id_tab_contacts_ll" android:padding="10.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="16.0dip" android:textColor="#ff333333" android:gravity="center" android:id="@id/id_contacts_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/explain_tab3" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/id_tab_line_iv" android:background="@drawable/tab_selected_pressed_holo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="tab" />
+</LinearLayout>

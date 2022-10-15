@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/mz_act_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/mz_act_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/mz_black_aplha90" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="20.0dip" android:text="测试环境" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/mz_black_aplha60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:text="测量心率时，请确保手环佩戴贴紧手臂，如手环佩戴较松，会导致测量经常失败，此时可在测量心率前将手环往上移动确保它紧贴手臂，测完心率后再移动回原来您习惯的位置；点测心率时，手环应平放在腕骨以上一指宽的位置。测量时，一开始必须完全静止，直到测量出结果后再进入运动，这样可以获得更高的准确度。" android:lineSpacingExtra="10.0dip" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/mz_black_aplha90" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="35.0dip" android:layout_marginRight="20.0dip" android:text="操作方式" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/mz_black_aplha60" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:text="a、进入“心率”版块；\nb、点击“点击测量”按钮。" android:lineSpacingExtra="10.0dip" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/img_point1" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/mz_black_aplha90" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="38.0dip" android:layout_marginRight="20.0dip" android:text="结果呈现" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/mz_black_aplha60" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:text="点击心率测量后，数据结果会统计到下方的历史数据栏中。如果通过手环的点击进行测量，心率结果只会反馈在手环屏幕上，不会记入历史数据栏中。" android:lineSpacingExtra="10.0dip" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/img_point2" />
+        </LinearLayout>
+    </ScrollView>
+    <View android:background="@color/mz_act_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

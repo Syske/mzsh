@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/app_bg" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/y96">
+        <ImageButton android:id="@id/ib_back" android:background="@drawable/btn_return_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="17.0dip" android:textColor="#ffffffff" android:id="@id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/y14" android:text="@string/heart_rate_title" android:layout_centerHorizontal="true" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="10.0dip" android:textColor="#ffffffff" android:id="@id/tv_time_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/y4" android:text="Jan 5" android:layout_below="@id/tv" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

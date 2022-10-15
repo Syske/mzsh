@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff59c8d3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/y96">
+        <ImageButton android:id="@id/ib_back" android:background="@drawable/btn_return_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="18.0dip" android:textColor="#ffffffff" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_alarm" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/save_alarm" android:layout_width="50.0dip" android:layout_height="26.0dip" android:layout_marginRight="@dimen/x24" android:text="@string/save_alarm" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.meizu.smart.wristband.meizuUI.widget.CycleWheelView android:id="@id/wheel_hour" android:layout_width="80.0dip" android:layout_height="150.0dip" android:layout_marginRight="10.0dip" android:overScrollMode="never" />
+                    <TextView android:textSize="20.0dip" android:textColor="@color/mz_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=":" />
+                    <com.meizu.smart.wristband.meizuUI.widget.CycleWheelView android:id="@id/wheel_mins" android:layout_width="80.0dip" android:layout_height="150.0dip" android:layout_marginLeft="10.0dip" android:overScrollMode="never" />
+                </LinearLayout>
+                <TextView android:textSize="12.0dip" android:textColor="@color/black_60" android:id="@id/time_remain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1111111" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/black_4" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+                <TextView android:textSize="12.0dip" android:textColor="@color/black_60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/repeat" />
+            </LinearLayout>
+            <View android:background="@color/black_15" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <RelativeLayout android:id="@id/alram_ly_once" android:background="@drawable/info_rl_selector" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="10.0">
+                <TextView android:textColor="@color/black_90" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/alarm_once_string" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/alram_checkbox_once" android:layout_marginRight="20.0dip" android:checked="false" android:layout_centerVertical="true" style="@style/clock_checkbox_3" />
+            </RelativeLayout>
+            <View android:background="@color/black_15" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <RelativeLayout android:id="@id/alram_ly_work_days" android:background="@drawable/info_rl_selector" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="10.0">
+                <TextView android:textColor="@color/black_90" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/alarm_work_days" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/alram_checkbox_work_days" android:layout_marginRight="20.0dip" android:checked="false" android:layout_centerVertical="true" style="@style/clock_checkbox_3" />
+            </RelativeLayout>
+            <View android:background="@color/black_15" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <RelativeLayout android:id="@id/alram_ly_everyday" android:background="@drawable/info_rl_selector" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="10.0">
+                <TextView android:textColor="@color/black_90" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/alarm_every_day" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/alram_checkbox_everyday" android:layout_marginRight="20.0dip" android:checked="false" android:layout_centerVertical="true" style="@style/clock_checkbox_3" />
+            </RelativeLayout>
+            <View android:background="@color/black_15" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <RelativeLayout android:id="@id/alram_ly_cus" android:background="@drawable/info_rl_selector" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="10.0">
+                <TextView android:textColor="@color/black_90" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/alarm_customize" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/alram_checkbox_cus" android:layout_marginRight="20.0dip" android:checked="false" android:layout_centerVertical="true" style="@style/clock_checkbox_3" />
+            </RelativeLayout>
+            <View android:background="@color/black_15" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <RelativeLayout android:gravity="center" android:id="@id/alram_ly_delete" android:background="@drawable/info_rl_selector" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="10.0">
+                <TextView android:textSize="20.0dip" android:textColor="@color/mz_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_delete" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

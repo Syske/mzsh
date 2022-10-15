@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginLeft="@dimen/x130" android:layout_marginRight="@dimen/x130">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="6.0">
+            <ImageView android:id="@id/iv_bind_icon" android:background="@drawable/confirmation_the_band" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/imageView_refresh" android:background="@drawable/ic_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:background="#ffb6b6b6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="16.0dip" android:textColor="#ff424242" android:id="@id/bind_tip_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logining" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

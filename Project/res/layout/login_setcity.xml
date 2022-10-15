@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/app_bg" android:fitsSystemWindows="true" android:clipToPadding="true" style="@style/match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" android:layout_width="fill_parent" android:layout_height="40.0dip" layout="@layout/title_back" />
+    <LinearLayout android:orientation="vertical" android:layout_marginLeft="30.0dip" android:layout_below="@id/title" style="@style/match_parent">
+        <include layout="@layout/line_edge" />
+        <ListView android:id="@id/country_listview" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="#ffc3c3c3" android:dividerHeight="1.0dip" style="@style/match_parent" />
+        <ListView android:id="@id/province_listview" android:visibility="gone" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="#ffc3c3c3" android:dividerHeight="1.0dip" style="@style/match_parent" />
+        <ListView android:id="@id/city_listview" android:visibility="gone" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="#ffc3c3c3" android:dividerHeight="1.0dip" style="@style/match_parent" />
+    </LinearLayout>
+</RelativeLayout>

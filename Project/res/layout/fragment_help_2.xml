@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/app_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="16.0dip" android:textColor="#fffec305" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x24" android:layout_marginTop="@dimen/y64" />
+    <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="15.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x24" android:layout_marginTop="@dimen/y52" />
+    <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="15.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x24" android:layout_marginTop="@dimen/y26" />
+    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/how_to_use_put" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/y120" />
+    <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="15.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x24" android:layout_marginTop="@dimen/y80" />
+</LinearLayout>

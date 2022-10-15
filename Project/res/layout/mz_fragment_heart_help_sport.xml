@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/mz_act_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/mz_act_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/mz_black_aplha90" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="20.0dip" android:text="测试环境" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/mz_black_aplha60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:text="跑步模式下自动测试，实时显示心率数值，并通过图表反馈心率波动。" android:lineSpacingExtra="10.0dip" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/mz_black_aplha90" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="35.0dip" android:layout_marginRight="20.0dip" android:text="操作方式" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/mz_black_aplha60" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:text="在步数页面点击右上角的“小人”图标，进去跑步模式。打开跑步模式中的设置“齿轮图标”确保实时心率按钮打开（该选项默认是打开的）。最高心率功能同时启动（默认数值为150）" android:lineSpacingExtra="10.0dip" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/img_dynamic1" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/mz_black_aplha90" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="38.0dip" android:layout_marginRight="20.0dip" android:text="结果呈现" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/mz_black_aplha60" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:text="跑步模式下点击切换到数据模式，即可看到运动时的实时心率。同时通过图表反馈心率波动。当实时心率检测到结果超过设定数值时，手环会发出震动提醒。" android:lineSpacingExtra="10.0dip" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/img_dynamic2" />
+        </LinearLayout>
+    </ScrollView>
+    <View android:background="@color/mz_act_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

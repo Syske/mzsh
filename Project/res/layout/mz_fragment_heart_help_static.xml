@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/mz_act_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/mz_act_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/mz_black_aplha90" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="20.0dip" android:text="测试环境" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/mz_black_aplha60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:text="手环自动每小时测量一次，形成全天心率走势图。" android:lineSpacingExtra="10.0dip" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/mz_black_aplha90" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="35.0dip" android:layout_marginRight="20.0dip" android:text="操作方式" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/mz_black_aplha60" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:text="确保手环设置项中心率检测设置为自动。" android:lineSpacingExtra="10.0dip" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/img_rest1" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/mz_black_aplha90" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="38.0dip" android:layout_marginRight="20.0dip" android:text="结果呈现" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/mz_black_aplha60" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:text="点击心率页面的详情，可以看到全天静息心率曲线详情。同时会采集数据，显示使用者的平均心率值，用户可以参考此数值了解自己心脏或身体是否在健康范围内。" android:lineSpacingExtra="10.0dip" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/img_rest2" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/img_rest3" />
+        </LinearLayout>
+    </ScrollView>
+    <View android:background="@color/mz_act_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

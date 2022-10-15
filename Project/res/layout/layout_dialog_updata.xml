@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dailog_exit_bg" android:layout_width="300.0dip" android:layout_height="213.0dip" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="159.0dip">
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="16.0dip" android:textColor="#ff616161" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x30" android:layout_marginTop="@dimen/y50" android:text="@string/new_version" />
+            <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip">
+                <ListView android:id="@id/list_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+            </ScrollView>
+        </LinearLayout>
+        <View android:background="#ffb6b6b6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="54.0dip">
+            <RelativeLayout android:id="@id/rl_cancel" android:background="@drawable/btn_exit_selector" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="18.0dip" android:textColor="#ff424242" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/RemaindSetCancel" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:background="#ffb6b6b6" android:layout_width="1.0px" android:layout_height="fill_parent" />
+            <RelativeLayout android:id="@id/rl_done" android:background="@drawable/btn_exit_selector" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="18.0dip" android:textColor="#ff59cbd3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sure_str" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

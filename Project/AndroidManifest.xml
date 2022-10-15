@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.meizu.smart.wristband" platformBuildVersionCode="23" platformBuildVersionName="6.0-2166767">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="no.nordicsemi.android.LOG"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_GPS"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"/>
+    <application android:allowBackup="true" android:icon="@mipmap/desk_logo" android:label="@string/app_name" android:name="com.meizu.smart.wristband.MyApplication" android:theme="@style/AppTheme">
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="nOTCGPZIXEGgUUCEosb3fPYRjq8BMmyr"/>
+        <activity android:name="com.meizu.smart.wristband.StartActivity" android:theme="@style/AppTheme_wu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:name="com.meizu.smart.wristband.RemainsActiveService.RemainsActiveService"/>
+        <service android:enabled="true" android:name="com.baidu.location.f" android:process=":remote"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.userinfo.choosecity.ChooseCityActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.sport.SportContentActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.sport.sporthistory.SportHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.sport.RunActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.sport.NoticeActivity" android:screenOrientation="portrait" android:theme="@style/Transparent"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.sport.RunPreActivity" android:screenOrientation="portrait" android:theme="@style/activity_translucent"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.sport.RunDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.setting.about_l1.PowerActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.setting.help_l1.HelpActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.sport.l1.explain_l1.ExplainActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.sport.l1.runhistory_l1.HistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.setting.about_l1.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.download.DownLoadActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.setting.HelpActivity2" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.userinfo.InfoActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.setting.alarm.AlarmActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.setting.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.product521.BindActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.product521.ProductActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.meizu.smart.wristband.meizuUI.product521.hands_up.HandUpActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.meizu.smart.wristband.meizuUI.product521.heartrate_monitor.HeartRateMonitorActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.meizu.smart.wristband.meizuUI.product521.UnbundActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.meizu.smart.wristband.meizuUI.product521.long_sit.LongSitActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.meizu.smart.wristband.meizuUI.product521.DateAndTimeActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.sport.runrecord.SportRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.sport.widget.RunSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.ota.nodic.DfuActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.ota.suota.DeviceActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.sport.explain.AerobicExplainActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.setting.WechatSportActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.setting.PreferencesActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.main.TipActivity" android:screenOrientation="portrait" android:theme="@style/Transparent"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.share.SportShareActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.meizu.smart.wristband.meizuUI.product521.smart_reminder.SmartReminderActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.product521.photo.TakePhoto" android:screenOrientation="portrait"/>
+        <service android:name="com.meizu.smart.wristband.ota.nodic.DfuBaseService"/>
+        <service android:enabled="true" android:exported="true" android:label="@string/app_name" android:name="com.meizu.smart.wristband.servers.NotificationReceiverService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCUfjxkkX6M8AhHEGt_9HdGlaxkfWB3iHc"/>
+        <activity android:label="@string/title_activity_run_in_map1" android:name="com.meizu.smart.wristband.meizuUI.sport.RunInMapActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mob.tools.MobUIShell" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <data android:scheme="tencent1105601144"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="AuthorizeAdapter" android:value="com.meizu.smart.wristband.meizuUI.share.MyAdapter"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.meizu.smart.wristband.wxapi.WXEntryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:enabled="true" android:exported="true" android:name="com.meizu.smart.wristband.bluetooth.BleService"/>
+        <service android:enabled="true" android:exported="true" android:name="com.meizu.smart.wristband.servers.MusicControlService"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.login_regist.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.login_regist.findpwd.FindPwdActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.login_regist.regist.RegistActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.login_regist.RegistInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.main.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.heartRate.HeartRateActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.meizu.smart.wristband.meizuUI.sleep.SleepHistoryActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.sport.SportHistoryActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.main.SpalshActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.main.GuideActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.share.SleepShareActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.share.HeartrateShareActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.meizu.smart.wristband.meizuUI.share.StepShareActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.meizu.smart.wristband.meizuUI.product521.VibrationIntensityActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.meizu.smart.wristband.meizuUI.setting.alarm.AlarmEditActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.meizu.smart.wristband.meizuUI.product521.NewBindActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:label="@string/title_activity_run_in_map1" android:name="com.meizu.smart.wristband.meizuUI.sport.meizu.NewRunInMapActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.bugly.beta.ui.BetaActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="com.meizu.smart.wristband.meizuUI.main.FlymeWebviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.meizu.smart.wristband.meizuUI.main.BondHelpActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.meizu.smart.wristband.meizuUI.product521.PermissonsHelpActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.meizu.smart.wristband.meizuUI.main.HeartMeasureHelpActivity" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:name="com.tencent.bugly.beta.tinker.TinkerResultService"/>
+        <service android:exported="false" android:name="com.tencent.tinker.lib.service.TinkerPatchService" android:process=":patch"/>
+        <service android:exported="false" android:name="com.tencent.tinker.lib.service.TinkerPatchService$InnerService" android:process=":patch"/>
+        <service android:exported="false" android:name="com.tencent.tinker.lib.service.DefaultTinkerResultService"/>
+    </application>
+</manifest>

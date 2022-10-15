@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="20.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_content" android:background="#ff3e9bd5" android:layout_width="fill_parent" android:layout_height="26.0dip" />
+    <ListView android:id="@id/list" android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

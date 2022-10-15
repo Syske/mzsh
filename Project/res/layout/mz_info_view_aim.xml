@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/mz_act_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="17.0dip" android:textColor="@color/mz_main_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="63.0dip" android:text="@string/mz_set_aim" />
+    <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="10.0dip" android:textColor="@color/mz_black_aplha60" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x40" android:layout_marginTop="21.0dip" android:layout_marginRight="@dimen/x40" android:text="@string/mz_info_aim_tip" android:lineSpacingExtra="10.0dip" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:src="@drawable/mz_icon_step" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip">
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="22.0dip" android:textColor="@color/mz_black_aplha80" android:layout_gravity="bottom" android:id="@id/ivSportAim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="70" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="12.0dip" android:textColor="@color/mz_black_aplha80" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/step" />
+    </LinearLayout>
+    <com.meizu.smart.wristband.meizuUI.widget.scaleview.ScaleRulerView android:id="@id/horizontalScaleSport" android:background="@android:color/white" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginTop="10.0dip" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:src="@drawable/mz_icon_sleep" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/y35">
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="22.0dip" android:textColor="@color/mz_black_aplha80" android:layout_gravity="bottom" android:id="@id/ivSleepAimHour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="12.0dip" android:textColor="@color/mz_black_aplha80" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mz_info_hour" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="22.0dip" android:textColor="@color/mz_black_aplha80" android:layout_gravity="bottom" android:id="@id/ivSleepAimMinute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="12.0dip" android:textColor="@color/mz_black_aplha80" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mz_info_minu" />
+    </LinearLayout>
+    <com.meizu.smart.wristband.meizuUI.widget.scaleview.DecimalScaleRulerView android:id="@id/horizontalScaleSleep" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip" />
+</LinearLayout>

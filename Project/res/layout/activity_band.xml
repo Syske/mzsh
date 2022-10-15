@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff59c8d3" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/y96">
+        <ImageButton android:id="@id/ib_back" android:background="@drawable/btn_return_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="17.0dip" android:textColor="#ffffffff" android:id="@id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/binding" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="218.0">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:background="@drawable/icon_bind_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <RelativeLayout android:layout_width="120.0dip" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/iv_animation" android:background="@drawable/icon_bind_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x10" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/fail" android:background="@drawable/fail" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <ImageView android:background="@drawable/icon_bind_band" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_fail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/y20" android:layout_alignParentBottom="true">
+                <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/black_90" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Connection failed" />
+                <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/black_90" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="please try again" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="350.0">
+            <TextView android:textColor="@color/black_90" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x40" android:text="@string/scaning" />
+            <View android:background="@color/black_10" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/y14" />
+            <com.meizu.smart.wristband.meizuUI.main.widget.RefreshableView android:id="@id/refreshable_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ListView android:id="@id/list_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/black_10" android:overScrollMode="never" />
+            </com.meizu.smart.wristband.meizuUI.main.widget.RefreshableView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

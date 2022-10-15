@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_centerInParent="true">
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textColor="@color/color_font_normal" android:gravity="center" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Firmware update" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="280.0dip" android:layout_height="wrap_content">
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textColor="@color/color_font_normal" android:id="@id/tv_file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Upgrade remain " />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textColor="@color/color_font_normal" android:id="@id/tv_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="0%" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ProgressBar android:layout_gravity="center" android:id="@id/pb1" android:layout_width="280.0dip" android:layout_height="30.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/bg_progress7" style="?android:attr/progressBarStyleHorizontal" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/pb2" android:layout_width="60.0dip" android:layout_height="60.0dip" style="?android:attr/progressBarStyleLarge" />
+        </FrameLayout>
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:layout_width="280.0dip" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="" />
+    </LinearLayout>
+</RelativeLayout>

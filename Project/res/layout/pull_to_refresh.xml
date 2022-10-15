@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pull_to_refresh_head" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="180.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="3.0">
+            <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" android:layout_centerInParent="true" />
+            <ProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="12.0">
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="12.0dip" android:textColor="#ff787878" android:gravity="center" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/pull_to_refresh" android:layout_weight="1.0" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="9.0dip" android:textColor="#ffc4c4c4" android:gravity="center" android:id="@id/updated_at" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/updated_at" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

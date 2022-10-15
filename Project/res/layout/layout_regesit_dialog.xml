@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bind_dialog_bg" android:layout_width="320.0dip" android:layout_height="200.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.5">
+            <com.meizu.smart.wristband.meizuUI.main.widget.DrawHookView android:id="@id/iv_hook_icon" android:visibility="gone" android:layout_width="@dimen/x120" android:layout_height="@dimen/y120" android:layout_centerInParent="true" />
+            <com.meizu.smart.wristband.meizuUI.main.widget.DrawErrorView android:id="@id/iv_error_icon" android:visibility="gone" android:layout_width="@dimen/x120" android:layout_height="@dimen/y120" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/imageView_refresh" android:background="@drawable/mz_ic_refresh" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:background="#ffb6b6b6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="20.0dip" android:textColor="#ff424242" android:id="@id/regesit_tip_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/y24" android:text="@string/registering" android:layout_centerHorizontal="true" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="#ff616161" android:id="@id/regesit_tip_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bind_tips_content1" android:layout_below="@id/regesit_tip_title" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

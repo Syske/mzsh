@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/mz_act_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/y247">
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="21.0dip" android:textColor="@color/mz_main_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" />
+    </RelativeLayout>
+    <com.meizu.smart.wristband.meizuUI.font.BaseEditText android:textSize="14.0dip" android:textColor="@color/black" android:textColorHint="@color/mz_activity_login_et_hint" android:id="@id/edt_account" android:background="@drawable/mz_edittext_select" android:paddingLeft="@dimen/x30" android:layout_width="fill_parent" android:layout_height="@dimen/y81" android:layout_marginLeft="@dimen/x48" android:layout_marginTop="@dimen/y137" android:layout_marginRight="@dimen/x51" android:hint="@string/input_phone_tip" android:maxLength="38" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/y50">
+        <com.meizu.smart.wristband.meizuUI.font.BaseEditText android:textSize="14.0dip" android:textColor="@color/black" android:textColorHint="@color/mz_activity_login_et_hint" android:id="@id/edt_pwd" android:background="@drawable/mz_edittext_select" android:paddingLeft="@dimen/x30" android:layout_width="fill_parent" android:layout_height="@dimen/y81" android:layout_marginLeft="@dimen/x48" android:layout_marginRight="@dimen/x51" android:hint="@string/login_passward_tip" android:maxLength="16" android:inputType="textPassword" />
+        <ImageView android:id="@id/iv_edt_pwd_eye" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/x30" android:src="@drawable/mz_btn_eye_off" android:layout_alignRight="@id/edt_pwd" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.meizu.smart.wristband.meizuUI.font.BaseButton android:enabled="false" android:textSize="18.0dip" android:textColor="@android:color/white" android:id="@id/btn_login" android:background="@drawable/mz_login_button_select" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x25" android:layout_marginTop="@dimen/y54" android:layout_marginRight="@dimen/x25" android:text="@string/login" android:textAllCaps="false" style="?android:attr/borderlessButtonStyle" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x69" android:layout_marginTop="@dimen/y13" android:layout_marginRight="@dimen/x69">
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="12.0dip" android:textColor="@color/mz_main_color" android:id="@id/tv_forget_pwd" android:paddingRight="@dimen/x18" android:paddingBottom="@dimen/x18" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_forgetPwd" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="12.0dip" android:textColor="@color/mz_main_color" android:id="@id/tv_go_regist" android:paddingLeft="@dimen/x18" android:paddingBottom="@dimen/x18" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_regist" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_horizontal" android:id="@id/third_login" android:layout_width="fill_parent" android:layout_height="@dimen/y90" android:layout_marginBottom="@dimen/y50" android:layout_alignParentBottom="true">
+            <Button android:id="@id/btnWeChat" android:background="@drawable/mz_login_button_weixin_select" android:layout_width="@dimen/x90" android:layout_height="@dimen/y90" />
+            <Button android:id="@id/btnQQ" android:background="@drawable/mz_login_button_qq_select" android:layout_width="@dimen/x90" android:layout_height="@dimen/y90" android:layout_marginLeft="34.0dip" />
+            <Button android:id="@id/btnWeibo" android:background="@drawable/mz_login_button_weibo_select" android:layout_width="@dimen/x90" android:layout_height="@dimen/y90" android:layout_marginLeft="34.0dip" android:layout_alignParentRight="true" />
+            <Button android:id="@id/btnFlyme" android:background="@drawable/mz_login_button_flyme_select" android:layout_width="@dimen/x90" android:layout_height="@dimen/y90" android:layout_marginLeft="34.0dip" android:layout_alignParentRight="true" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/y24" android:layout_marginLeft="34.0dip" android:layout_marginRight="34.0dip" android:layout_marginBottom="@dimen/y30" android:layout_above="@id/third_login">
+            <View android:background="@color/mz_activity_login_line" android:layout_width="100.0dip" android:layout_height="1.0px" android:layout_centerVertical="true" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="10.0dip" android:textColor="@color/mz_activity_login_et_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:text="@string/third_login" android:layout_centerInParent="true" />
+            <View android:background="@color/mz_activity_login_line" android:layout_width="100.0dip" android:layout_height="1.0px" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

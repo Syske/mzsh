@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/app_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android_custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rlrl" android:background="@drawable/setting_item_select" android:layout_width="fill_parent" android:layout_height="@dimen/y96">
+        <ImageButton android:id="@id/btn_back" android:background="@drawable/btn_return_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="18.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:id="@id/view" android:background="@color/rl_title_line" android:layout_width="fill_parent" android:layout_height="@dimen/y1" android:layout_below="@id/rlrl" />
+    <RelativeLayout android:id="@id/rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/y186" android:layout_centerHorizontal="true">
+        <com.meizu.smart.wristband.meizuUI.sport.widget.RoundProgressBar android:id="@id/power_progress" android:layout_width="190.0dip" android:layout_height="190.0dip" android_custom:roundColor1="#ff838383" android_custom:roundProgressColor1="#ffffffff" android_custom:roundWidth1="1.0dip" android_custom:textColor1="@android:color/white" android_custom:textSize1="50.0dip" android_custom:textIsDisplayable="true" />
+        <ImageView android:background="@drawable/power_disconn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:background="@drawable/product_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/y150" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/y48" android:layout_below="@id/rl" android:layout_centerHorizontal="true">
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="16.0dip" android:textColor="@android:color/white" android:id="@id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="16.0dip" android:textColor="@android:color/white" android:id="@id/tv_power" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100%" android:layout_toRightOf="@id/tv" />
+    </RelativeLayout>
+</RelativeLayout>

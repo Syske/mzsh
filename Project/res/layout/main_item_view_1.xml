@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x24" android:src="@drawable/welcome" android:layout_centerVertical="true" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="#ff787878" android:id="@id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x20" android:text="@string/main_welcome_tips" android:layout_toRightOf="@id/iv" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/white_20" android:layout_width="fill_parent" android:layout_height="@dimen/y1" android:layout_alignParentBottom="true" />
+</RelativeLayout>

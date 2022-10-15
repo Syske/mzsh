@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/mz_act_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="301.0dip" android:layout_height="205.0dip" android:layout_marginTop="80.0dip" android:src="@drawable/mz_img_guide2" />
+    <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="18.0dip" android:textColor="#ff59c8d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="53.0dip" android:text="让健康常驻我心" />
+    <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="@color/mz_black_aplha50" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="全天候监测睡眠和心率状况，\n提供专业健康分析与建议。" android:lineSpacingExtra="6.0dip" />
+</LinearLayout>

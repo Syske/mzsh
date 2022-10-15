@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/app_bg" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/y96">
+        <ImageButton android:id="@id/ib_sport_detail" android:background="@drawable/historical_data_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="18.0dip" android:textColor="#ffffffff" android:id="@id/tvtvtvtv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sport_today" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/ib_setting" android:background="@drawable/setting_bt_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/rl_title_line" android:layout_width="fill_parent" android:layout_height="@dimen/y1" />
+    <com.meizu.smart.wristband.meizuUI.main.widget.DrawlerLayout android:orientation="vertical" android:id="@id/drawler" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="349.0dip">
+            <com.meizu.smart.wristband.meizuUI.main.widget.ViewPagerCanScroll android:id="@id/main_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <RelativeLayout android:id="@id/ll_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/y30" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <com.meizu.smart.wristband.meizuUI.main.widget.RefreshableView android:id="@id/refreshable_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="207.0">
+            <ListView android:id="@id/list_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" />
+        </com.meizu.smart.wristband.meizuUI.main.widget.RefreshableView>
+    </com.meizu.smart.wristband.meizuUI.main.widget.DrawlerLayout>
+</LinearLayout>

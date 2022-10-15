@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="100.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true">
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="36.0dip" android:textColor="@color/black_90" android:id="@id/alarm_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="07:40" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip">
+                <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="12.0dip" android:textColor="@color/black_90" android:id="@id/alarm_time_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mon.Tue.Wed.Thu.Fri.Sat.Sun" />
+                <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="12.0dip" android:textColor="@color/black_90" android:id="@id/alarm_time_remain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="10 minutes remain" />
+            </LinearLayout>
+        </LinearLayout>
+        <CheckBox android:id="@id/alarm_cb" android:focusable="false" android:layout_marginRight="24.0dip" style="@style/clock_checkbox_2" />
+        <View android:background="@color/black_15" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

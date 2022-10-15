@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff59c8d3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/y96">
+        <ImageButton android:id="@id/ib_back" android:background="@drawable/btn_return_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="18.0dip" android:textColor="#ffffffff" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_alarm" android:layout_centerInParent="true" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/done" android:layout_width="50.0dip" android:layout_height="26.0dip" android:layout_marginRight="@dimen/x24" android:text="@string/finish" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/relayout_time_set" android:layout_width="fill_parent" android:layout_height="100.0dip">
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="25.0dip" android:textColor="@color/black_90" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x40" android:text="@string/alarm_clock_time" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv1" android:background="@drawable/mz_setting_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/x40" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="20.0dip" android:textColor="@color/black_60" android:id="@id/tv_time_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/x18" android:text="07:30" android:layout_toLeftOf="@id/iv1" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/black_15" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        <RelativeLayout android:id="@id/rl_day" android:layout_width="fill_parent" android:layout_height="100.0dip">
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="25.0dip" android:textColor="@color/black_90" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x40" android:text="@string/repeat" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv2" android:background="@drawable/mz_setting_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/x40" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="16.0dip" android:textColor="@color/black_60" android:id="@id/tv_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/x18" android:text="11111" android:layout_toLeftOf="@id/iv2" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/black_15" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="16.0dip" android:textColor="#ffdedede" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x40" android:text="@string/smart_weak" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv3" android:background="@drawable/info_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/x40" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="12.0dip" android:textColor="#ff848484" android:id="@id/tv_smart_wake_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/x18" android:text="10min" android:layout_toLeftOf="@id/iv3" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="#ff343434" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="12.0dip" android:textColor="#ff848484" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x40" android:layout_marginTop="@dimen/y16" android:layout_marginRight="@dimen/x70" android:text="@string/smart_wake_tip" />
+    </LinearLayout>
+</LinearLayout>

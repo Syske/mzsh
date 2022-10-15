@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/app_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="16.0dip" android:textColor="#fffec305" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x24" android:layout_marginTop="@dimen/y64" />
+    <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="15.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x24" android:layout_marginTop="@dimen/y52" />
+    <RelativeLayout android:background="#ff1f2125" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/y46">
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="16.0dip" android:textColor="@android:color/white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x24" android:layout_marginTop="@dimen/y26" android:layout_marginBottom="@dimen/y26" android:text="A鞋" android:drawableLeft="@drawable/how_to_use_shoes" android:drawablePadding="@dimen/x20" android:layout_centerVertical="true" />
+        <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="16.0dip" android:textColor="@android:color/white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/x24" android:text="A鞋" android:drawableRight="@drawable/info_arrow" android:drawablePadding="@dimen/x30" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.meizu.smart.wristband.meizuUI.font.BaseTextView android:textSize="15.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/x24" android:layout_marginTop="@dimen/y134" />
+    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/how_to_use_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/y70" />
+</LinearLayout>

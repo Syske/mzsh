@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="27" android:drawable="@drawable/run_1" />
+    <item android:duration="27" android:drawable="@drawable/run_2" />
+    <item android:duration="27" android:drawable="@drawable/run_3" />
+    <item android:duration="27" android:drawable="@drawable/run_4" />
+    <item android:duration="27" android:drawable="@drawable/run_5" />
+    <item android:duration="27" android:drawable="@drawable/run_6" />
+    <item android:duration="27" android:drawable="@drawable/run_7" />
+    <item android:duration="27" android:drawable="@drawable/run_8" />
+    <item android:duration="27" android:drawable="@drawable/run_9" />
+    <item android:duration="27" android:drawable="@drawable/run_10" />
+    <item android:duration="27" android:drawable="@drawable/run_11" />
+    <item android:duration="27" android:drawable="@drawable/run_12" />
+    <item android:duration="27" android:drawable="@drawable/run_13" />
+    <item android:duration="27" android:drawable="@drawable/run_14" />
+    <item android:duration="27" android:drawable="@drawable/run_15" />
+    <item android:duration="27" android:drawable="@drawable/run_16" />
+    <item android:duration="27" android:drawable="@drawable/run_17" />
+    <item android:duration="27" android:drawable="@drawable/run_18" />
+    <item android:duration="27" android:drawable="@drawable/run_19" />
+    <item android:duration="27" android:drawable="@drawable/run_20" />
+    <item android:duration="27" android:drawable="@drawable/run_21" />
+    <item android:duration="27" android:drawable="@drawable/run_22" />
+    <item android:duration="27" android:drawable="@drawable/run_23" />
+    <item android:duration="27" android:drawable="@drawable/run_24" />
+    <item android:duration="27" android:drawable="@drawable/run_25" />
+    <item android:duration="27" android:drawable="@drawable/run_26" />
+    <item android:duration="27" android:drawable="@drawable/run_27" />
+    <item android:duration="27" android:drawable="@drawable/run_28" />
+    <item android:duration="27" android:drawable="@drawable/run_29" />
+</animation-list>
