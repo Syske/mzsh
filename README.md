@@ -23,3 +23,15 @@
 ### 发版说明
 这里我直接提供了安卓`APP`，不想深究的小伙伴可以直接下载安装，有问题欢迎提`isuse`
 
+
+### 赞助
+在此之前其实已经有大佬在某鱼上提供了相关`APP`，但是我一直觉得自己动手丰衣足食，所以就有了这个工程，如果你觉得确实帮到你了，欢迎投喂，当然，也欢迎白嫖😀
+
+
+#### 支付宝
+
+<img src="https://images.cnblogs.com/cnblogs_com/caoleiCoding/1259828/o_221015165627_1665852936485.jpg" width = "50%">
+
+#### 微信
+
+<img src="https://images.cnblogs.com/cnblogs_com/caoleiCoding/1259828/o_221015165315_mm_facetoface_collect_qrcode_1665852715345.png" width = "50%">
