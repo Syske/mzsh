@@ -13,12 +13,14 @@
 本次用到了`AndroidKiller`，版本`v1.3.1`，这是一个逆向集成工具，可以直接将`apk`文件的核心源码反编译为`smail`工程文件，然后我们通过修改`smail`文件，达到自己`APP`魔改的需求。
 该工具同时集成了编译、打包、`ABD`调试等功能，用起来很顺手，后续我会专门出一期使用教程。
 
-相关内容已经梳理到个人知识库：(androidkiller工具使用指南)[https://github.com/Syske/person-learning-note/blob/master/%E5%AE%89%E5%8D%93/androidkiller%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.md]
+相关内容已经梳理到个人知识库：
+[androidkiller工具使用指南](https://github.com/Syske/person-learning-note/blob/master/%E5%AE%89%E5%8D%93/androidkiller%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.md)
 
 ### smail基本语法
 因为我们这里直接修改的是`smail`文件，所以学习一些基本语法也是必须的。作为一个`java`后端开发，我的安卓开发经验基本为零，所以在`smail`源码的过程中，踩了很多坑，当然也成长很多，后面我会把本次踩坑的知识点梳理下分享出来。
 
-相关内容已经梳理到个人知识库：(smail基本语法示例)[https://github.com/Syske/person-learning-note/blob/master/%E5%AE%89%E5%8D%93/smail%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E7%A4%BA%E4%BE%8B.md]
+相关内容已经梳理到个人知识库：
+[smail基本语法示例](https://github.com/Syske/person-learning-note/blob/master/%E5%AE%89%E5%8D%93/smail%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E7%A4%BA%E4%BE%8B.md)
 
 
 ### 修改内容
