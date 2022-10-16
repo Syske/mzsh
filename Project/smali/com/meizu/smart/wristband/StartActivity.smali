@@ -110,7 +110,7 @@
     .line 167
     .local v1, "user":Lcom/meizu/smart/wristband/models/database/entity/User;
     if-nez v1, :cond_1
-    const-string v2, "13572465548"
+    const-string v2, "syske"
     new-instance v1, Lcom/meizu/smart/wristband/models/database/servers/LoginInfoServer;
     invoke-direct {v1, p0}, Lcom/meizu/smart/wristband/models/database/servers/LoginInfoServer;-><init>(Landroid/content/Context;)V
     invoke-virtual {v1, v2, v2}, Lcom/meizu/smart/wristband/models/database/servers/LoginInfoServer;->saveLoginInfo(Ljava/lang/String;Ljava/lang/String;)V
